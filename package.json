@@ -1,0 +1,27 @@
+{
+  "name": "portfolio-website",
+  "version": "1.0.0",
+  "description": "My portfolio website",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w sass/ -o dist/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "nikola-ivanovski"
+  },
+  "keywords": [
+    "web-dev",
+    "web-design",
+    "front-end"
+  ],
+  "author": "Nikola Ivanovski",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "multiparty": "^4.2.2",
+    "node-sass": "^6.0.0",
+    "nodemailer": "^6.6.1"
+  }
+}

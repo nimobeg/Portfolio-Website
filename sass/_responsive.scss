@@ -1,0 +1,517 @@
+﻿@media only screen and (max-width: 360px) {
+  .dot {
+    display: none;
+  }
+
+  .cr {
+    display: none;
+  }
+
+  .main-container {
+    flex-direction: column;
+    height: 100%;
+
+    .first-col {
+      height: 70vh;
+      padding: 5rem 1rem;
+
+      .my-name {
+        line-height: 1;
+      }
+    }
+
+    .second-col {
+      padding: 0;
+    }
+
+    .col-work {
+      padding: 5rem 1rem 0rem 1rem;
+    }
+
+    .col-work:nth-of-type(2) {
+      padding: 0rem 1rem 5rem 1rem;
+    }
+
+    .blog {
+      height: 100vh;
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+  }
+
+  .about-me-section {
+    h1 {
+      line-height: 1;
+      text-align: center;
+    }
+
+    .about-me-info {
+      padding: 0 1rem;
+    }
+
+    .education {
+      padding: 5rem 0;
+      .courses {
+        flex-direction: column;
+      }
+    }
+
+    .top-dev {
+      padding: 0 1rem;
+      text-align: center;
+    }
+
+    .learning-in-the-moment {
+      padding-bottom: 5rem;
+    }
+  }
+
+  .footer {
+    padding: 1rem 0;
+  }
+
+  .side-menu-container {
+    width: 100%;
+    padding: 4rem 0;
+    background-color: #34495e;
+  }
+
+  .page-heading {
+    padding: 5rem 1rem 2rem 1rem;
+    .portfolio-header {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0;
+      span {
+        font-size: 4rem;
+      }
+    }
+
+    .resume {
+      padding-top: 3rem;
+
+      a {
+        left: 0;
+      }
+    }
+  }
+
+  .divider {
+    padding: 0 1rem;
+  }
+}
+
+@media only screen and (min-width: 361px) and (max-width: 375px) {
+  .dot {
+    display: none;
+  }
+
+  .cr {
+    display: none;
+  }
+
+  .main-container {
+    flex-direction: column;
+    height: 100%;
+
+    .first-col {
+      height: 70vh;
+      padding: 8rem 1rem 1rem 1rem;
+
+      .my-name {
+        line-height: 1;
+        margin: 0;
+      }
+    }
+
+    .second-col {
+      padding: 0;
+    }
+
+    .col-work {
+      padding: 5rem 1rem 0rem 1rem;
+    }
+
+    .col-work:nth-of-type(2) {
+      padding: 0rem 1rem 5rem 1rem;
+    }
+
+    .blog {
+      height: 100vh;
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+  }
+
+  .about-me-section {
+    h1 {
+      line-height: 1;
+      text-align: center;
+    }
+
+    .about-me-info {
+      padding: 0 1rem;
+    }
+
+    .education {
+      padding: 5rem 0;
+      .courses {
+        flex-direction: column;
+      }
+    }
+
+    .top-dev {
+      padding: 0 1rem;
+      text-align: center;
+    }
+
+    .learning-in-the-moment {
+      padding-bottom: 5rem;
+    }
+  }
+
+  .footer {
+    padding: 1rem 0;
+  }
+
+  .side-menu-container {
+    width: 100%;
+    padding: 4rem 0;
+    background-color: #34495e;
+  }
+
+  .page-heading {
+    padding: 5rem 1rem 2rem 1rem;
+    .portfolio-header {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0;
+      span {
+        font-size: 4rem;
+      }
+    }
+
+    .resume {
+      padding-top: 3rem;
+
+      a {
+        left: 0;
+      }
+    }
+  }
+
+  .divider {
+    padding: 0 1rem;
+  }
+}
+
+@media only screen and (min-width: 376px) and (max-width: 414px) {
+  .dot {
+    display: none;
+  }
+
+  .cr {
+    display: none;
+  }
+
+  .main-container {
+    flex-direction: column;
+    height: 100%;
+
+    .first-col {
+      height: 70vh;
+      padding: 7rem 1rem 0rem 1rem;
+
+      .my-name {
+        line-height: 1;
+      }
+    }
+
+    .second-col {
+      padding: 0;
+    }
+
+    .col-work {
+      padding: 5rem 1rem 0rem 1rem;
+    }
+
+    .col-work:nth-of-type(2) {
+      padding: 0rem 1rem 5rem 1rem;
+    }
+
+    .blog {
+      height: 100vh;
+      padding: 7rem 1rem 0rem 1rem;
+      text-align: center;
+    }
+  }
+
+  .about-me-section {
+    h1 {
+      line-height: 1;
+      text-align: center;
+    }
+
+    .about-me-info {
+      padding: 0 1rem;
+    }
+
+    .education {
+      padding: 5rem 0;
+      .courses {
+        flex-direction: column;
+      }
+    }
+
+    .top-dev {
+      padding: 0 1rem;
+      text-align: center;
+    }
+
+    .learning-in-the-moment {
+      padding-bottom: 5rem;
+    }
+  }
+
+  .footer {
+    padding: 1rem 0;
+  }
+
+  .side-menu-container {
+    width: 100%;
+    padding: 4rem 0;
+    background-color: #34495e;
+  }
+
+  .page-heading {
+    padding: 5rem 1rem 2rem 1rem;
+    .portfolio-header {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0;
+      span {
+        font-size: 4rem;
+      }
+    }
+
+    .resume {
+      padding-top: 3rem;
+
+      a {
+        left: 0;
+      }
+    }
+  }
+
+  .divider {
+    padding: 0 1rem;
+  }
+}
+
+@media only screen and (min-width: 415px) and (max-width: 600px) {
+  .dot {
+    display: none;
+  }
+
+  .cr {
+    display: none;
+  }
+
+  .main-container {
+    flex-direction: column;
+    height: 100%;
+
+    .first-col {
+      text-align: center;
+      height: 100%;
+      padding: 7rem 3rem 0rem 3rem;
+
+      .my-name {
+        line-height: 1;
+      }
+    }
+
+    .second-col {
+      padding: 0;
+    }
+
+    .col-work {
+      padding: 5rem 1rem 0rem 1rem;
+    }
+
+    .col-work:nth-of-type(2) {
+      padding: 0rem 4rem 5rem 4rem;
+    }
+
+    .blog {
+      height: 100vh;
+      padding: 7rem 1rem 0rem 1rem;
+      text-align: center;
+    }
+  }
+
+  .about-me-section {
+    h1 {
+      line-height: 1;
+      text-align: center;
+    }
+
+    .about-me-info {
+      padding: 0 3rem;
+    }
+
+    .education {
+      padding: 5rem 0;
+      .courses {
+        flex-direction: column;
+      }
+    }
+
+    .top-dev {
+      padding: 0 3rem;
+      text-align: center;
+    }
+
+    .learning-in-the-moment {
+      padding-bottom: 5rem;
+    }
+  }
+
+  .footer {
+    padding: 1rem 0;
+  }
+
+  .side-menu-container {
+    width: 100%;
+    padding: 4rem 0;
+    background-color: #34495e;
+  }
+
+  .page-heading {
+    padding: 5rem 4rem 2rem 4rem;
+    .portfolio-header {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0;
+      span {
+        font-size: 4rem;
+      }
+    }
+
+    .resume {
+      padding-top: 3rem;
+
+      a {
+        left: 0;
+      }
+    }
+  }
+
+  .divider {
+    padding: 0 1rem;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 800px) {
+  .dot {
+    display: none;
+  }
+
+  .cr {
+    display: none;
+  }
+
+  .main-container {
+    flex-direction: column;
+    height: 100%;
+
+    .first-col {
+      text-align: center;
+      height: 100%;
+      padding: 7rem 3rem 0rem 3rem;
+
+      .my-name {
+        line-height: 1;
+      }
+    }
+
+    .second-col {
+      padding: 0;
+    }
+
+    .col-work {
+      padding: 5rem 8rem 0rem 0rem;
+    }
+
+    .col-work:nth-of-type(2) {
+      padding: 0rem 4rem 5rem 4rem;
+    }
+
+    .blog {
+      height: 100vh;
+      padding: 7rem 1rem 0rem 1rem;
+      text-align: center;
+    }
+  }
+
+  .about-me-section {
+    h1 {
+      line-height: 1;
+      text-align: center;
+    }
+
+    .about-me-info {
+      padding: 0 3rem;
+    }
+
+    .education {
+      padding: 5rem 0;
+      .courses {
+        flex-direction: column;
+      }
+    }
+
+    .top-dev {
+      padding: 0 3rem;
+      text-align: center;
+    }
+
+    .learning-in-the-moment {
+      padding-bottom: 5rem;
+    }
+  }
+
+  .footer {
+    padding: 1rem 0;
+  }
+
+  .side-menu-container {
+    width: 100%;
+    padding: 4rem 0;
+    background-color: #34495e;
+  }
+
+  .page-heading {
+    padding: 5rem 4rem 2rem 6rem;
+    .portfolio-header {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0;
+      span {
+        font-size: 4rem;
+      }
+    }
+
+    .resume {
+      padding-top: 3rem;
+
+      a {
+        left: 0;
+      }
+    }
+  }
+
+  .divider {
+    padding: 0 1rem;
+  }
+}

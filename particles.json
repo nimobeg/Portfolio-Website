@@ -1,0 +1,18 @@
+{
+  "particles": {
+    "number": {
+      "value": 50
+    },
+    "color": {
+      "value": "#fff"
+    },
+    "shape": {
+      "type": "square",
+      "size": 20
+    }
+  },
+  "fullScreen": {
+    "enable": true,
+    "zIndex": 0
+  }
+}

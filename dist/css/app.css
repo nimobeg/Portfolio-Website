@@ -1,0 +1,739 @@
+* {
+  font-family: "Inconsolata", monospace;
+  scroll-behavior: smooth; }
+
+body {
+  margin: auto;
+  overflow-x: hidden;
+  background-color: #12232e; }
+  body #particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    margin: 0; }
+
+h1 {
+  font-size: 6rem;
+  line-height: 0.3;
+  color: #fff; }
+
+p {
+  color: #fff; }
+
+.cr {
+  position: fixed;
+  left: 10px;
+  top: 10px;
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  border: 1px solid rgba(199, 162, 0, 0.5);
+  border-radius: 100%;
+  transition: all 80ms ease; }
+
+.dot {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 5px;
+  height: 5px;
+  background: rgba(199, 162, 0, 0.5);
+  border-radius: 100%;
+  transition: all 80ms ease; }
+
+.main-container .first-col {
+  padding-right: 5%; }
+  .main-container .first-col .hello {
+    font-size: 5rem;
+    font-family: "Inconsolata", monospace;
+    color: transparent;
+    text-transform: uppercase;
+    -webkit-text-stroke: 0.6px #fff; }
+    .main-container .first-col .hello .znak {
+      -webkit-text-stroke: 0.6px #fff;
+      color: transparent; }
+  .main-container .first-col .my-name {
+    font-size: 5rem;
+    font-family: "Inconsolata", monospace;
+    text-transform: uppercase;
+    color: #fff; }
+    .main-container .first-col .my-name .nikola-heading {
+      -webkit-text-stroke: 0.6px #fff; }
+    .main-container .first-col .my-name .znak {
+      -webkit-text-stroke: 0.6px #fff;
+      color: transparent; }
+  .main-container .first-col p {
+    font-size: 1.5rem; }
+
+.main-container .second-col {
+  padding: 2% 4%; }
+  .main-container .second-col .circle-shadow {
+    background: rgba(199, 162, 0, 0.4);
+    border-radius: 50%;
+    filter: blur(3px);
+    height: 30px;
+    width: 350px;
+    position: relative;
+    bottom: 40px; }
+  .main-container .second-col .t-rex {
+    width: 350px; }
+  .main-container .second-col svg {
+    fill: #fff; }
+  .main-container .second-col [id="L"],
+  .main-container .second-col [id="R"] {
+    animation: leg 2s infinite steps(2); }
+  .main-container .second-col [id="R"] {
+    animation-delay: -1s; }
+
+@keyframes leg {
+  to {
+    transform: translateY(-30%);
+    fill: #c7a200; } }
+  .main-container .second-col p {
+    text-align: center; }
+
+.about-me-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: #162733;
+  padding: 6% 0; }
+  .about-me-section h1 {
+    color: transparent;
+    -webkit-text-stroke: 0.6px #fff; }
+  .about-me-section .about-me-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3% 0; }
+    .about-me-section .about-me-info .social {
+      z-index: 2; }
+    .about-me-section .about-me-info p {
+      color: #fff; }
+  .about-me-section .education .courses {
+    display: flex;
+    flex-direction: row; }
+    .about-me-section .education .courses .course {
+      padding-right: 2%;
+      border-bottom: 1px solid #fff; }
+      .about-me-section .education .courses .course .title {
+        color: #c7a200; }
+  .about-me-section .top-dev {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .about-me-section .top-dev .dev-txt {
+      padding-top: 10%;
+      padding-bottom: 2%;
+      color: #fff;
+      font-size: 1.2rem; }
+  .about-me-section .learning-in-the-moment {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4%; }
+    .about-me-section .learning-in-the-moment span {
+      color: #fff;
+      font-size: 1.2rem;
+      padding-bottom: 4%; }
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #111;
+  padding: 1% 0;
+  position: relative;
+  z-index: 1; }
+  .footer .footer-text {
+    font-size: 1rem;
+    color: white; }
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #12232e; }
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #12232e; }
+
+::-webkit-scrollbar-thumb {
+  background-color: #12232e;
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent); }
+
+.cf:before,
+.cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+.cf:after {
+  clear: both; }
+
+.cf {
+  *zoom: 1; }
+
+.menu-stripe {
+  display: inline-flex;
+  width: 26px;
+  height: 3px;
+  background: #c7a200;
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  -ms-transition: all 0.1s linear;
+  -o-transition: all 0.1s linear;
+  transition: all 0.1s linear; }
+  .menu-stripe:before, .menu-stripe:after {
+    content: "";
+    display: inline-flex;
+    width: 26px;
+    height: 3px;
+    background: #c7a200;
+    position: absolute;
+    left: 0;
+    -webkit-transition: all 0.1s linear;
+    -moz-transition: all 0.1s linear;
+    -ms-transition: all 0.1s linear;
+    -o-transition: all 0.1s linear;
+    transition: all 0.1s linear; }
+  .menu-stripe:before {
+    top: -8px; }
+  .menu-stripe:after {
+    top: 8px; }
+
+.header-menu {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  position: sticky;
+  top: 2.5rem;
+  margin-right: 3rem;
+  z-index: 3; }
+  .header-menu .menu {
+    position: relative; }
+  .header-menu #menu-trigger {
+    display: flex;
+    width: 26px;
+    line-height: 15px;
+    position: sticky;
+    top: 2.5rem;
+    left: 3rem;
+    cursor: pointer;
+    z-index: 2;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%); }
+    .header-menu #menu-trigger.menu-clicked .menu-stripe {
+      background-color: transparent; }
+      .header-menu #menu-trigger.menu-clicked .menu-stripe:before {
+        background-color: white;
+        top: 50%;
+        -webkit-transform: translateY(-50%) rotate(45deg);
+        -moz-transform: translateY(-50%) rotate(45deg);
+        -ms-transform: translateY(-50%) rotate(45deg);
+        -o-transform: translateY(-50%) rotate(45deg);
+        transform: translateY(-50%) rotate(45deg); }
+      .header-menu #menu-trigger.menu-clicked .menu-stripe:after {
+        background-color: white;
+        top: 50%;
+        -webkit-transform: translateY(-50%) rotate(-45deg);
+        -moz-transform: translateY(-50%) rotate(-45deg);
+        -ms-transform: translateY(-50%) rotate(-45deg);
+        -o-transform: translateY(-50%) rotate(-45deg);
+        transform: translateY(-50%) rotate(-45deg); }
+    .header-menu #menu-trigger.menu-clicked:hover .menu-stripe {
+      background-color: transparent; }
+      .header-menu #menu-trigger.menu-clicked:hover .menu-stripe:before {
+        top: 50%;
+        -webkit-transform: translateY(-50%) rotate(45deg);
+        -moz-transform: translateY(-50%) rotate(45deg);
+        -ms-transform: translateY(-50%) rotate(45deg);
+        -o-transform: translateY(-50%) rotate(45deg);
+        transform: translateY(-50%) rotate(45deg); }
+      .header-menu #menu-trigger.menu-clicked:hover .menu-stripe:after {
+        top: 50%;
+        -webkit-transform: translateY(-50%) rotate(-45deg);
+        -moz-transform: translateY(-50%) rotate(-45deg);
+        -ms-transform: translateY(-50%) rotate(-45deg);
+        -o-transform: translateY(-50%) rotate(-45deg);
+        transform: translateY(-50%) rotate(-45deg); }
+    .header-menu #menu-trigger:hover .menu-stripe {
+      background-color: white; }
+      .header-menu #menu-trigger:hover .menu-stripe:before, .header-menu #menu-trigger:hover .menu-stripe:after {
+        background-color: white; }
+      .header-menu #menu-trigger:hover .menu-stripe:before {
+        top: -10px; }
+      .header-menu #menu-trigger:hover .menu-stripe:after {
+        top: 10px; }
+
+.side-menu-container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  width: 20%;
+  height: 100%;
+  background-color: #34495ee7;
+  color: white;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 2;
+  visibility: hidden;
+  padding: 5rem;
+  -webkit-transition: transform 0.4s 0s, visibility 0s 0.4s;
+  -moz-transition: transform 0.4s 0s, visibility 0s 0.4s;
+  -ms-transition: transform 0.4s 0s, visibility 0s 0.4s;
+  -o-transition: transform 0.4s 0s, visibility 0s 0.4s;
+  transition: transform 0.4s 0s, visibility 0s 0.4s;
+  -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  -o-transform: translateY(100%);
+  transform: translateY(100%); }
+  .side-menu-container a {
+    display: flex;
+    flex-direction: column;
+    line-height: 3;
+    font-size: 2rem;
+    color: #fff;
+    text-transform: uppercase; }
+  .side-menu-container a:hover {
+    color: rgba(199, 162, 0, 0.9); }
+  .side-menu-container .menu-copyright {
+    position: absolute;
+    bottom: 20%; }
+  .side-menu-container .social-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%; }
+    .side-menu-container .social-menu > * {
+      padding-right: 20px; }
+  .side-menu-container.slide-in {
+    visibility: visible;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition: transform 0.4s 0s, visibility 0s 0s;
+    -moz-transition: transform 0.4s 0s, visibility 0s 0s;
+    -ms-transition: transform 0.4s 0s, visibility 0s 0s;
+    -o-transition: transform 0.4s 0s, visibility 0s 0s;
+    transition: transform 0.4s 0s, visibility 0s 0s; }
+
+.page-heading .portfolio-header {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  overflow: hidden;
+  position: relative;
+  width: auto;
+  padding: 2% 0 1% 7%;
+  font-family: "Inconsolata", monospace; }
+
+.page-heading .portfolio-header span:nth-child(1) {
+  font-size: 3rem;
+  color: #c7a200;
+  -webkit-text-stroke: 0; }
+
+.page-heading .portfolio-header span {
+  letter-spacing: -3px;
+  font-size: 9rem;
+  color: transparent;
+  -webkit-text-stroke: 0.6px #fff; }
+
+.page-heading .portfolio-header span::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 18.5%;
+  width: 0;
+  color: #fff;
+  overflow: hidden;
+  white-space: nowrap;
+  transition: all 2s cubic-bezier(0.29, 0.73, 0.74, 1.02); }
+
+.page-heading .portfolio-header span:hover::before {
+  width: 100%; }
+
+.page-heading .portfolio-header [data-animation="to-left"] span::before {
+  color: white; }
+
+.page-heading .portfolio-header [data-animation] span::before {
+  width: 100%; }
+
+.page-heading .portfolio-header [data-animation="to-left"] span:hover::before {
+  width: 0; }
+
+.page-heading .resume a {
+  font-family: "Inconsolata", monospace;
+  position: relative;
+  left: 85%;
+  font-size: 2rem;
+  color: #fff;
+  line-height: 0;
+  text-decoration: none; }
+
+.main-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: transparent; }
+  .main-container .col-work:nth-of-type(1) {
+    top: 0; }
+  .main-container .col-work {
+    position: relative; }
+    .main-container .col-work a {
+      text-transform: uppercase;
+      color: transparent;
+      z-index: 1; }
+    .main-container .col-work p {
+      color: #c7a200; }
+    .main-container .col-work span {
+      display: block;
+      font-size: 3rem;
+      -webkit-text-stroke: 0.6px #fff;
+      font-family: "Inconsolata", monospace;
+      padding-bottom: 2rem; }
+    .main-container .col-work span::before {
+      content: attr(data-text);
+      position: absolute;
+      width: 0;
+      color: #fff;
+      overflow: hidden;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: all 2s cubic-bezier(0.29, 0.73, 0.74, 2.02); }
+  .main-container h2 {
+    -webkit-text-stroke: 0.8px #fff;
+    font-size: 5rem;
+    color: transparent; }
+    .main-container h2 span {
+      color: #ffffff; }
+
+.main-container .col-work span:hover::before {
+  width: 100%; }
+
+.main-container .col-work [data-animation="to-left"] span::before {
+  color: white; }
+
+.main-container .col-work [data-animation] span::before {
+  width: 100%; }
+
+.main-container .col-work [data-animation="to-left"] span:hover::before {
+  width: 0; }
+
+.divider {
+  padding: 0 6rem; }
+  .divider div {
+    height: 1px;
+    background-color: #fff; }
+
+@media only screen and (max-width: 360px) {
+  .dot {
+    display: none; }
+  .cr {
+    display: none; }
+  .main-container {
+    flex-direction: column;
+    height: 100%; }
+    .main-container .first-col {
+      height: 70vh;
+      padding: 5rem 1rem; }
+      .main-container .first-col .my-name {
+        line-height: 1; }
+    .main-container .second-col {
+      padding: 0; }
+    .main-container .col-work {
+      padding: 5rem 1rem 0rem 1rem; }
+    .main-container .col-work:nth-of-type(2) {
+      padding: 0rem 1rem 5rem 1rem; }
+    .main-container .blog {
+      height: 100vh;
+      padding: 3rem 1rem;
+      text-align: center; }
+  .about-me-section h1 {
+    line-height: 1;
+    text-align: center; }
+  .about-me-section .about-me-info {
+    padding: 0 1rem; }
+  .about-me-section .education {
+    padding: 5rem 0; }
+    .about-me-section .education .courses {
+      flex-direction: column; }
+  .about-me-section .top-dev {
+    padding: 0 1rem;
+    text-align: center; }
+  .about-me-section .learning-in-the-moment {
+    padding-bottom: 5rem; }
+  .footer {
+    padding: 1rem 0; }
+  .side-menu-container {
+    width: 100%;
+    padding: 4rem 0;
+    background-color: #34495e; }
+  .page-heading {
+    padding: 5rem 1rem 2rem 1rem; }
+    .page-heading .portfolio-header {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0; }
+      .page-heading .portfolio-header span {
+        font-size: 4rem; }
+    .page-heading .resume {
+      padding-top: 3rem; }
+      .page-heading .resume a {
+        left: 0; }
+  .divider {
+    padding: 0 1rem; } }
+
+@media only screen and (min-width: 361px) and (max-width: 375px) {
+  .dot {
+    display: none; }
+  .cr {
+    display: none; }
+  .main-container {
+    flex-direction: column;
+    height: 100%; }
+    .main-container .first-col {
+      height: 70vh;
+      padding: 8rem 1rem 1rem 1rem; }
+      .main-container .first-col .my-name {
+        line-height: 1;
+        margin: 0; }
+    .main-container .second-col {
+      padding: 0; }
+    .main-container .col-work {
+      padding: 5rem 1rem 0rem 1rem; }
+    .main-container .col-work:nth-of-type(2) {
+      padding: 0rem 1rem 5rem 1rem; }
+    .main-container .blog {
+      height: 100vh;
+      padding: 3rem 1rem;
+      text-align: center; }
+  .about-me-section h1 {
+    line-height: 1;
+    text-align: center; }
+  .about-me-section .about-me-info {
+    padding: 0 1rem; }
+  .about-me-section .education {
+    padding: 5rem 0; }
+    .about-me-section .education .courses {
+      flex-direction: column; }
+  .about-me-section .top-dev {
+    padding: 0 1rem;
+    text-align: center; }
+  .about-me-section .learning-in-the-moment {
+    padding-bottom: 5rem; }
+  .footer {
+    padding: 1rem 0; }
+  .side-menu-container {
+    width: 100%;
+    padding: 4rem 0;
+    background-color: #34495e; }
+  .page-heading {
+    padding: 5rem 1rem 2rem 1rem; }
+    .page-heading .portfolio-header {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0; }
+      .page-heading .portfolio-header span {
+        font-size: 4rem; }
+    .page-heading .resume {
+      padding-top: 3rem; }
+      .page-heading .resume a {
+        left: 0; }
+  .divider {
+    padding: 0 1rem; } }
+
+@media only screen and (min-width: 376px) and (max-width: 414px) {
+  .dot {
+    display: none; }
+  .cr {
+    display: none; }
+  .main-container {
+    flex-direction: column;
+    height: 100%; }
+    .main-container .first-col {
+      height: 70vh;
+      padding: 7rem 1rem 0rem 1rem; }
+      .main-container .first-col .my-name {
+        line-height: 1; }
+    .main-container .second-col {
+      padding: 0; }
+    .main-container .col-work {
+      padding: 5rem 1rem 0rem 1rem; }
+    .main-container .col-work:nth-of-type(2) {
+      padding: 0rem 1rem 5rem 1rem; }
+    .main-container .blog {
+      height: 100vh;
+      padding: 7rem 1rem 0rem 1rem;
+      text-align: center; }
+  .about-me-section h1 {
+    line-height: 1;
+    text-align: center; }
+  .about-me-section .about-me-info {
+    padding: 0 1rem; }
+  .about-me-section .education {
+    padding: 5rem 0; }
+    .about-me-section .education .courses {
+      flex-direction: column; }
+  .about-me-section .top-dev {
+    padding: 0 1rem;
+    text-align: center; }
+  .about-me-section .learning-in-the-moment {
+    padding-bottom: 5rem; }
+  .footer {
+    padding: 1rem 0; }
+  .side-menu-container {
+    width: 100%;
+    padding: 4rem 0;
+    background-color: #34495e; }
+  .page-heading {
+    padding: 5rem 1rem 2rem 1rem; }
+    .page-heading .portfolio-header {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0; }
+      .page-heading .portfolio-header span {
+        font-size: 4rem; }
+    .page-heading .resume {
+      padding-top: 3rem; }
+      .page-heading .resume a {
+        left: 0; }
+  .divider {
+    padding: 0 1rem; } }
+
+@media only screen and (min-width: 415px) and (max-width: 600px) {
+  .dot {
+    display: none; }
+  .cr {
+    display: none; }
+  .main-container {
+    flex-direction: column;
+    height: 100%; }
+    .main-container .first-col {
+      text-align: center;
+      height: 100%;
+      padding: 7rem 3rem 0rem 3rem; }
+      .main-container .first-col .my-name {
+        line-height: 1; }
+    .main-container .second-col {
+      padding: 0; }
+    .main-container .col-work {
+      padding: 5rem 1rem 0rem 1rem; }
+    .main-container .col-work:nth-of-type(2) {
+      padding: 0rem 4rem 5rem 4rem; }
+    .main-container .blog {
+      height: 100vh;
+      padding: 7rem 1rem 0rem 1rem;
+      text-align: center; }
+  .about-me-section h1 {
+    line-height: 1;
+    text-align: center; }
+  .about-me-section .about-me-info {
+    padding: 0 3rem; }
+  .about-me-section .education {
+    padding: 5rem 0; }
+    .about-me-section .education .courses {
+      flex-direction: column; }
+  .about-me-section .top-dev {
+    padding: 0 3rem;
+    text-align: center; }
+  .about-me-section .learning-in-the-moment {
+    padding-bottom: 5rem; }
+  .footer {
+    padding: 1rem 0; }
+  .side-menu-container {
+    width: 100%;
+    padding: 4rem 0;
+    background-color: #34495e; }
+  .page-heading {
+    padding: 5rem 4rem 2rem 4rem; }
+    .page-heading .portfolio-header {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0; }
+      .page-heading .portfolio-header span {
+        font-size: 4rem; }
+    .page-heading .resume {
+      padding-top: 3rem; }
+      .page-heading .resume a {
+        left: 0; }
+  .divider {
+    padding: 0 1rem; } }
+
+@media only screen and (min-width: 601px) and (max-width: 800px) {
+  .dot {
+    display: none; }
+  .cr {
+    display: none; }
+  .main-container {
+    flex-direction: column;
+    height: 100%; }
+    .main-container .first-col {
+      text-align: center;
+      height: 100%;
+      padding: 7rem 3rem 0rem 3rem; }
+      .main-container .first-col .my-name {
+        line-height: 1; }
+    .main-container .second-col {
+      padding: 0; }
+    .main-container .col-work {
+      padding: 5rem 8rem 0rem 0rem; }
+    .main-container .col-work:nth-of-type(2) {
+      padding: 0rem 4rem 5rem 4rem; }
+    .main-container .blog {
+      height: 100vh;
+      padding: 7rem 1rem 0rem 1rem;
+      text-align: center; }
+  .about-me-section h1 {
+    line-height: 1;
+    text-align: center; }
+  .about-me-section .about-me-info {
+    padding: 0 3rem; }
+  .about-me-section .education {
+    padding: 5rem 0; }
+    .about-me-section .education .courses {
+      flex-direction: column; }
+  .about-me-section .top-dev {
+    padding: 0 3rem;
+    text-align: center; }
+  .about-me-section .learning-in-the-moment {
+    padding-bottom: 5rem; }
+  .footer {
+    padding: 1rem 0; }
+  .side-menu-container {
+    width: 100%;
+    padding: 4rem 0;
+    background-color: #34495e; }
+  .page-heading {
+    padding: 5rem 4rem 2rem 6rem; }
+    .page-heading .portfolio-header {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0; }
+      .page-heading .portfolio-header span {
+        font-size: 4rem; }
+    .page-heading .resume {
+      padding-top: 3rem; }
+      .page-heading .resume a {
+        left: 0; }
+  .divider {
+    padding: 0 1rem; } }

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dist/css/app.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>My Work | Nikola Ivanovski</title>
+  </head>
+  <body>
+    <div id="particles-js"></div>
+    <div class="dot"></div>
+    <div class="cr"></div>
+
+    <div class="header-menu">
+      <div class="menu">
+        <a id="menu-trigger">
+          <span class="menu-stripe stripe-top"></span>
+        </a>
+      </div> 
+    </div>
+    <div id="side" class="side-menu-container">
+      <a href="index.html">home</a>
+      <a href="work.html">projects</a>
+      <a href="blog.html">blog</a>
+      <div class="menu-copyright">
+        <p>© 2021</p>
+      </div>
+    </div>
+
+    <div class="page-heading">
+      <div class="portfolio-header">
+        <span>my</span>
+        <span data-animation="to-left" data-text="portfolio">portfolio</span>
+      </div>
+
+      <div class="resume">
+            <a href="resume/Nikola Ivanovski CV.pdf" download>My resume</a>
+        </div>
+    </div>
+
+    <div class="divider">
+        <div></div>
+    </div>
+    <div class="main-container">
+      <div class="col-work">
+        <p>/01</p>
+        <a href="https://www.muriellemarie.com"><span data-animation="to-left" data-text="Murielle Marie" class="murielle">Murielle Marie</span></a>
+        <p>/02</p>
+        <a href="https://hijamaencupping.nl/"><span data-animation="to-left" data-text="Hijama en cuppin">Hijama en cuppin</span></a>
+        <p>/03</p>
+        <a href="https://soppognyttevekster.no/"><span data-animation="to-left" data-text="Sopp og Nyttevekster">Sopp og Nyttevekster</span></a>
+        <p>/04</p>
+        <a href="https://blacksheepcyber.com/"><span data-animation="to-left" data-text="Black Sheep Cyber">Black Sheep Cyber</span></a>
+      </div>
+      <div class="col-work">
+        <p>/05</p>
+        <a href="https://motemat.realmat.no/"><span data-animation="to-left" data-text="Realmat.no (Custom Theme)">Realmat.no (Custom Theme)</span></a>
+        <p>/06</p>
+        <a href="http://radekoncarliftovi.com/"><span data-animation="to-left" data-text="Rade Koncar Elevators">Rade Koncar Elevators</span></a>
+        <p>/07</p>
+        <a href="http://rodar.mk/en/"><span data-animation="to-left" data-text="Rodar Paper">Rodar Paper</span></a>
+        <p>/08</p>
+        <a href="https://healthinarabic.com/"><span data-animation="to-left" data-text="Health in Arabic">Health in Arabic</span></a>
+      </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-text">
+      © Made with <span style="color: #c70039"> &hearts; </span> by
+      Nikola I.
+    </div>
+    <script src="main.js"></script>
+  </body>
+  <script src="app.js"></script>
+  <script>
+    particlesJS.load("particles-js", "particles.json", function () {});
+  </script>
+</html>
